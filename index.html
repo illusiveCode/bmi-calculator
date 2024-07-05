@@ -14,7 +14,89 @@
     <link rel="stylesheet" href="style.css" />
     <title>BMI Calculator</title>
   </head>
-  <body>
+  <body class="text-center font-inter relative z-10">
+    <div
+      class="h-[640px] bg-gradient-to-br from-transparent to-[#D6E6FE] absolute w-full -z-10 rounded-b-[35px]"
+    ></div>
+    <main class="container z-10">
+      <section class="flex flex-col items-center">
+        <div><img src="/images/logo.svg" alt="" class="w-8 my-6" /></div>
+        <div>
+          <h1 class="text-heading-l font-semi-bold text-gunmetal">Body Mass Index Calculator</h1>
+
+          <p class="text-body-s text-dark-electric-blue">
+            Better understand your weight in relation to your height using our body mass index (BM)
+            calculator. While BMI is not the sole determinant of a healthy weight, it offers a
+            valuable starting point to evaluate your overall health and well-being.
+          </p>
+        </div>
+        <div class="bg-pure-white p-6 rounded-2xl shadow-md w-full">
+          <h1 class="text-xl font-semibold mb-4 text-left">Enter your details below</h1>
+
+          <div class="flex justify-between mb-4">
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                class="form-radio text-blue"
+                size="20px"
+                name="unit"
+                value="metric"
+                checked
+              />
+              <span class="ml-2">Metric</span>
+            </label>
+            <label class="inline-flex items-center gap-2">
+              <input
+                type="radio"
+                class="form-radio text-blue-600 font"
+                name="unit"
+                value="imperial"
+              />
+              <span class="ml-2">Imperial</span>
+            </label>
+          </div>
+
+          <form>
+            <div class="mb-4">
+              <label class="block text-sm text-dark-electric-blue text-left mb-1">Height</label>
+              <div
+                class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+              >
+                <input
+                  type="number"
+                  value="185"
+                  class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
+                />
+                <span class="text-blue font-semi-bold text-heading-m">cm</span>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm text-dark-electric-blue text-left mb-1">Weight</label>
+              <div
+                class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+              >
+                <input
+                  type="number"
+                  value="185"
+                  class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
+                />
+                <span class="text-blue font-semi-bold text-heading-m">kg</span>
+              </div>
+            </div>
+
+            <div class="bg-blue p-8 rounded-2xl mt-6 text-left flex flex-col gap-6">
+              <p class="text-pure-white">
+                You BMI is...<span class="text-heading-l font-semi-bold block pt-2">23.4</span>
+              </p>
+              <p class="text-pure-white">
+                Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs -
+                85.2kgs.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
