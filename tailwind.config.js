@@ -5,7 +5,7 @@ const tailwindConfig = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "1.2rem",
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
