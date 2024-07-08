@@ -19,7 +19,7 @@
       class="h-[640px] bg-gradient-to-br from-transparent to-[#D6E6FE] absolute w-full -z-10 rounded-b-[35px]"
     ></div>
     <main class="z-10">
-      <section class="container flex flex-col items-center">
+      <section class="container flex flex-col items-center pb-20">
         <div><img src="/images/logo.svg" alt="" class="w-10 my-6" /></div>
         <div class="flex flex-col gap-6">
           <h1 class="text-heading-l font-semi-bold text-gunmetal">Body Mass Index Calculator</h1>
@@ -92,8 +92,8 @@
           </form>
         </div>
       </section>
-      <section>
-        <div class="mt-14"><img src="/images/image-man-eating.webp" alt="" /></div>
+      <section class="pb-20">
+        <div class=""><img src="/images/image-man-eating.webp" alt="" /></div>
         <div class="container flex flex-col gap-8 text-left py-12">
           <h2 class="text-3xl font-semi-bold text-gunmetal">What your BMI result means</h2>
           <p class="text-body-m text-dark-electric-blue">
@@ -105,8 +105,10 @@
           </p>
         </div>
       </section>
-      <section class="bg-gradient-to-r from-transparent to-[#ecf1f9] w-full -z-10">
-        <div class="container flex flex-col gap-10 py-14 text-left">
+      <section class="pb-20">
+        <div
+          class="container bg-gradient-to-r from-transparent to-[#ecf1f9] w-full -z-10 flex flex-col gap-10 py-14 text-left"
+        >
           <div>
             <div class="mb-8"><img src="/images/icon-eating.svg" alt="" /></div>
             <div class="flex flex-col gap-6 tablet:flex-row">
@@ -139,16 +141,85 @@
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Limitations of BMI</h2>
+      <section
+        class="container flex flex-col gap-14 bg-gradient-to-b from-transparent to-[#ecf1f9] w-full -z-10 pb-20"
+      >
+        <div class="flex flex-col gap-8">
+          <h2 class="text-3xl font-semi-bold text-gunmetal">Limitations of BMI</h2>
           <p class="text-dark-electric-blue text-body-m">
             Although BMI is often a practical indicator of healthy weight, it is not suited for
             every person. Specific groups should carefully consider their BMI outcomes, and in
             certain cases, the measurement may not be beneficial to use.
           </p>
         </div>
-        <div></div>
+        <div class="flex flex-col gap-4">
+          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+            <div class="flex items-center mb-4">
+              <img class="mr-4" src="/images/icon-gender.svg" alt="" />
+              <h3 class="text-heading-s text-gunmetal font-semi-bold">Gender</h3>
+            </div>
+            <div>
+              <p class="text-dark-electric-blue text-body-m">
+                The development and body fat composition of girls and boys vary with age.
+                Consequently, a child's age and gender are considered when evaluating their BMI.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+            <div class="flex items-center mb-4">
+              <img class="mr-4" src="/images/icon-age.svg" alt="" />
+              <h3 class="text-heading-s text-gunmetal font-semi-bold">Age</h3>
+            </div>
+            <div>
+              <p class="text-dark-electric-blue text-body-m">
+                In aging individuals, increased body fat and muscle loss may cause BMI to
+                underestimate body fat content.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+            <div class="flex items-center mb-4">
+              <img class="mr-4" src="/images/icon-muscle.svg" alt="" />
+              <h3 class="text-heading-s text-gunmetal font-semi-bold">Muscle</h3>
+            </div>
+            <div>
+              <p class="text-dark-electric-blue text-body-m">
+                BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+                differentiate muscle from fat.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+            <div class="flex items-center mb-4">
+              <img class="mr-4" src="/images/icon-pregnancy.svg" alt="" />
+              <h3 class="text-heading-s text-gunmetal font-semi-bold">Pregnancy</h3>
+            </div>
+            <div>
+              <p class="text-dark-electric-blue text-body-m">
+                Expectant mothers experience weight gain due to their growing baby. Maintaining a
+                healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and
+                child.
+              </p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+            <div class="flex items-center mb-4">
+              <img class="mr-4" src="/images/icon-race.svg" alt="" />
+              <h3 class="text-heading-s text-gunmetal font-semi-bold">Race</h3>
+            </div>
+            <div>
+              <p class="text-dark-electric-blue text-body-m">
+                Certain health concerns may affect individuals of some Black and Asian origins at
+                lower BMIs than others. To learn more, it is advised to discuss this with your GP or
+                practice nurse.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
