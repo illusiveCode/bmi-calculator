@@ -30,29 +30,38 @@
             valuable starting point to evaluate your overall health and well-being.
           </p>
         </div>
-        <div class="bg-pure-white p-6 rounded-2xl shadow-md w-full">
-          <h1 class="text-xl font-semibold mb-6 text-left">Enter your details below</h1>
+        <div class="bg-pure-white flex flex-col gap-6 p-6 rounded-2xl shadow-md w-full">
+          <h1 class="text-xl font-semibold text-left">Enter your details below</h1>
 
-          <div class="flex justify-between mb-6">
-            <label class="inline-flex items-center">
-              <input
-                type="radio"
-                class="text-blue relative appearance-none w-4 h-4 border-2 border-blue-500 rounded-full"
-                size="20px"
-                name="unit"
-                value="metric"
-                checked
-              />
-              <div className=" absolute w-8 h-8 rounded-full bg-blue-500 ml-1 mt-2"></div>
-              <span class="ml-2">Metric</span>
-            </label>
-            <label class="inline-flex items-center gap-2">
-              <input type="radio" class="text-blue font" name="unit" value="imperial" />
-              <span class="ml-2">Imperial</span>
-            </label>
+          <div class="flex items-center text-left">
+            <!-- Metric Radio Button -->
+            <div class="w-1/2">
+              <label class="inline-flex items-center">
+                <input
+                  type="radio"
+                  class="form-radio text-blue-600"
+                  name="measurement"
+                  value="metric"
+                  checked
+                />
+                <span class="ml-2 text-gray-700">Metric</span>
+              </label>
+            </div>
+            <!-- Imperial Radio Button -->
+            <div class="w-1/2">
+              <label class="inline-flex items-center">
+                <input
+                  type="radio"
+                  class="form-radio text-blue-600"
+                  name="measurement"
+                  value="imperial"
+                />
+                <span class="ml-2 text-gray-700">Imperial</span>
+              </label>
+            </div>
           </div>
 
-          <form>
+          <form class="md:flex gap-6">
             <div class="mb-4">
               <label class="block text-sm text-dark-electric-blue text-left mb-2">Height</label>
               <div
@@ -79,21 +88,24 @@
                 <span class="text-blue font-semi-bold text-heading-m">kg</span>
               </div>
             </div>
-
-            <div class="bg-blue p-8 rounded-2xl mt-6 text-left">
-              <p class="text-pure-white">
-                You BMI is...<span class="text-heading-l font-semi-bold block pt-2 mb-6">23.4</span>
-              </p>
-              <p class="text-pure-white">
-                Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs -
-                85.2kgs.
-              </p>
-            </div>
           </form>
+          <div
+            class="bg-blue flex flex-col md:flex-row md:place-items-center gap-6 justify-between p-8 rounded-l-2xl rounded-r-2xl md:rounded-r-full text-left"
+          >
+            <p class="text-pure-white flex flex-col gap-2">
+              You BMI is...<br /><span class="text-heading-l font-semi-bold">23.4</span>
+            </p>
+            <p class="flex text-pure-white md:w-1/2">
+              Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs -
+              85.2kgs.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="pb-20">
-        <div class=""><img src="/images/image-man-eating.webp" alt="" /></div>
+      <section class="pb-20 md:flex">
+        <div class="md:w-[80%]">
+          <img src="/images/image-man-eating.webp" alt="" />
+        </div>
         <div class="container flex flex-col gap-8 text-left py-12">
           <h2 class="text-3xl font-semi-bold text-gunmetal">What your BMI result means</h2>
           <p class="text-body-m text-dark-electric-blue">
