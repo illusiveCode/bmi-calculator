@@ -16,15 +16,19 @@
   </head>
   <body class="text-center font-inter relative z-10">
     <div
-      class="h-[640px] bg-gradient-to-br from-transparent to-[#D6E6FE] absolute w-full -z-10 rounded-b-[35px]"
+      class="h-[640px] lg:max-w-[978px] bg-gradient-to-br from-transparent to-[#D6E6FE] absolute w-full -z-10 rounded-b-[35px]"
     ></div>
-    <main class="z-10">
-      <section class="container flex flex-col items-center pb-20">
+    <main class="z-10 flex flex-col gap-24">
+      <section class="container flex flex-col lg:flex-row items-center gap-8">
         <div><img src="/images/logo.svg" alt="" class="w-10 my-6" /></div>
-        <div class="flex flex-col gap-6">
-          <h1 class="text-heading-l font-semi-bold text-gunmetal">Body Mass Index Calculator</h1>
+        <div class="flex flex-col lg:text-left gap-6">
+          <h1
+            class="text-heading-l font-semi-bold text-gunmetal md:max-w-[55%] lg:max-w-full lg:text-heading-xl mx-auto"
+          >
+            Body Mass Index Calculator
+          </h1>
 
-          <p class="text-body-s text-dark-electric-blue mb-8">
+          <p class="text-body-s text-dark-electric-blue">
             Better understand your weight in relation to your height using our body mass index (BM)
             calculator. While BMI is not the sole determinant of a healthy weight, it offers a
             valuable starting point to evaluate your overall health and well-being.
@@ -69,7 +73,7 @@
               >
                 <input
                   type="number"
-                  value="185"
+                  placeholder="0"
                   class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
                 />
                 <span class="text-blue font-semi-bold text-heading-m">cm</span>
@@ -82,7 +86,7 @@
               >
                 <input
                   type="number"
-                  value="185"
+                  placeholder="0"
                   class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
                 />
                 <span class="text-blue font-semi-bold text-heading-m">kg</span>
@@ -96,17 +100,17 @@
               You BMI is...<br /><span class="text-heading-l font-semi-bold">23.4</span>
             </p>
             <p class="flex text-pure-white md:w-1/2">
-              Your BMI suggests you're a healthy weight. Your ideal weight is between 63.3kgs -
-              85.2kgs.
+              Your BMI suggests you're a healthy weight. Your ideal weight is between
+              <strong class="contents">63.3kgs - 85.2kgs</strong>
             </p>
           </div>
         </div>
       </section>
-      <section class="pb-20 md:flex">
+      <section class="md:flex items-center gap-8">
         <div class="md:w-[80%]">
           <img src="/images/image-man-eating.webp" alt="" />
         </div>
-        <div class="container flex flex-col gap-8 text-left py-12">
+        <div class="container flex flex-col gap-8 text-left py-12 justify-center">
           <h2 class="text-3xl font-semi-bold text-gunmetal">What your BMI result means</h2>
           <p class="text-body-m text-dark-electric-blue">
             A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy
@@ -117,11 +121,9 @@
           </p>
         </div>
       </section>
-      <section class="pb-20">
-        <div
-          class="container bg-gradient-to-r from-transparent to-[#ecf1f9] w-full -z-10 flex flex-col gap-10 py-14 text-left"
-        >
-          <div>
+      <section class="bg-gradient-to-r from-transparent to-[#ecf1f9] w-full -z-10">
+        <div class="container flex flex-col gap-10 py-14 text-left">
+          <div class="md:flex gap-10 items-center">
             <div class="mb-8"><img src="/images/icon-eating.svg" alt="" /></div>
             <div class="flex flex-col gap-6 tablet:flex-row">
               <h3 class="text-heading-m text-gunmetal font-semi-bold">Healthy eating</h3>
@@ -131,8 +133,10 @@
               </p>
             </div>
           </div>
-          <div>
-            <div class="mb-8"><img src="/images/icon-exercise.svg" alt="" /></div>
+          <div class="md:flex gap-10 items-center">
+            <div class="mb-8">
+              <img src="/images/icon-exercise.svg" alt="" />
+            </div>
             <div class="flex flex-col gap-6 tablet:flex-row">
               <h3 class="text-heading-m text-gunmetal font-semi-bold">Regular exercise</h3>
               <p class="text-dark-electric-blue text-body-m">
@@ -141,7 +145,7 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="md:flex gap-10 items-center">
             <div class="mb-8"><img src="/images/icon-sleep.svg" alt="" /></div>
             <div class="flex flex-col gap-6 tablet:flex-row">
               <h3 class="text-heading-m text-gunmetal font-semi-bold">Adequate sleep</h3>
@@ -154,9 +158,9 @@
         </div>
       </section>
       <section
-        class="container flex flex-col gap-14 bg-gradient-to-b from-transparent to-[#ecf1f9] w-full -z-10 pb-20"
+        class="flex flex-col gap-14 bg-gradient-to-b from-transparent to-[#ecf1f9] w-full -z-10 pb-20"
       >
-        <div class="flex flex-col gap-8">
+        <div class="container flex flex-col gap-8">
           <h2 class="text-3xl font-semi-bold text-gunmetal">Limitations of BMI</h2>
           <p class="text-dark-electric-blue text-body-m">
             Although BMI is often a practical indicator of healthy weight, it is not suited for
@@ -164,7 +168,7 @@
             certain cases, the measurement may not be beneficial to use.
           </p>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="container gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
             <div class="flex items-center mb-4">
               <img class="mr-4" src="/images/icon-gender.svg" alt="" />
@@ -218,7 +222,9 @@
             </div>
           </div>
 
-          <div class="rounded-2xl bg-pure-white shadow-xl p-6 text-left">
+          <div
+            class="rounded-2xl bg-pure-white shadow-xl p-6 text-left md:col-span-2 md:col-start-1"
+          >
             <div class="flex items-center mb-4">
               <img class="mr-4" src="/images/icon-race.svg" alt="" />
               <h3 class="text-heading-s text-gunmetal font-semi-bold">Race</h3>

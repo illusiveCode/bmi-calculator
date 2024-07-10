@@ -2,6 +2,12 @@
 const tailwindConfig = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      xs: "375",
+      sm: "640px",
+      md: "768px",
+      lg: "1440px",
+    },
     container: {
       center: true,
       padding: {
