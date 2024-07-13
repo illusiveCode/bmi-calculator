@@ -24,7 +24,7 @@
         <div><img src="/images/logo.svg" alt="" class="w-10 my-6 lg:hidden" /></div>
         <div class="flex flex-col lg:text-left gap-6">
           <h1
-            class="text-heading-l font-semi-bold text-gunmetal md:min-w-[55%] lg:max-w-full lg:text-heading-xl mx-auto"
+            class="text-heading-l font-semibold text-gunmetal md:min-w-[55%] lg:max-w-full lg:text-heading-xl mx-auto"
           >
             Body Mass Index Calculator
           </h1>
@@ -44,14 +44,8 @@
             <!-- Metric Radio Button -->
             <div class="w-1/2">
               <label class="inline-flex items-center">
-                <input
-                  type="radio"
-                  class="form-radio text-blue"
-                  name="measurement"
-                  value="metric"
-                  checked
-                />
-                <span class="ml-2 text-gunmetal text-body-m-bold lg:text-2xl font-semi-bold"
+                <input type="radio" class="text-blue" name="measurement" value="metric" checked />
+                <span class="ml-2 text-gunmetal text-body-m-bold lg:text-2xl font-semibold"
                   >Metric</span
                 >
               </label>
@@ -59,13 +53,8 @@
             <!-- Imperial Radio Button -->
             <div class="w-1/2">
               <label class="inline-flex items-center">
-                <input
-                  type="radio"
-                  class="form-radio text-blue"
-                  name="measurement"
-                  value="imperial"
-                />
-                <span class="ml-2 text-gunmetal text-body-m-bold lg:text-2xl font-semi-bold"
+                <input type="radio" class="text-blue" name="measurement" value="imperial" />
+                <span class="ml-2 font-sem text-gunmetal text-body-m-bold lg:text-2xl font-semibold"
                   >Imperial</span
                 >
               </label>
@@ -73,6 +62,15 @@
           </div>
 
           <form class="md:flex gap-6">
+            <!-- TODO add imperial inputs-->
+            <!-- <div class="flex items-center border rounded-lg px-4 py-2">
+              <input
+                type="number"
+                class="outline-none border-none focus:ring-0 w-12 text-left"
+                placeholder="0"
+              />
+              <span class="text-blue font-semibold text-heading-m">ft</span>
+            </div> -->
             <div class="mb-4">
               <label class="block text-sm lg:text-lg text-dark-electric-blue text-left mb-2"
                 >Height</label
@@ -83,10 +81,12 @@
                 <input
                   type="number"
                   placeholder="0"
-                  class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
+                  class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
-                <span class="text-blue font-semi-bold text-heading-m">cm</span>
+                <span class="text-blue font-semibold text-heading-m">cm</span>
               </div>
+
+              <div></div>
             </div>
             <div class="mb-4">
               <label class="block text-sm lg:text-lg text-dark-electric-blue text-left mb-2"
@@ -98,9 +98,9 @@
                 <input
                   type="number"
                   placeholder="0"
-                  class="outline-none w-full text-gunmetal text-heading-m font-semi-bold"
+                  class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
-                <span class="text-blue font-semi-bold text-heading-m">kg</span>
+                <span class="text-blue font-semibold text-heading-m">kg</span>
               </div>
             </div>
           </form>
@@ -108,7 +108,7 @@
             class="bg-blue flex flex-col md:flex-row md:place-items-center gap-6 justify-between p-8 rounded-l-2xl rounded-r-2xl md:rounded-r-full text-left"
           >
             <p class="text-pure-white flex flex-col gap-2 lg:text-lg">
-              You BMI is...<br /><span class="text-heading-l font-semi-bold">23.4</span>
+              You BMI is...<br /><span class="text-heading-l font-semibold">23.4</span>
             </p>
             <p class="flex text-pure-white md:w-1/2 lg:text-lg">
               Your BMI suggests you're a healthy weight. Your ideal weight is between
@@ -122,7 +122,7 @@
           <img src="/images/image-man-eating.webp" alt="" />
         </div>
         <div class="container flex flex-col gap-8 text-left py-12 justify-center">
-          <h2 class="text-3xl lg:text-heading-l font-semi-bold text-gunmetal">
+          <h2 class="text-3xl lg:text-heading-l font-semibold text-gunmetal">
             What your BMI result means
           </h2>
           <p class="text-body-m lg:text-heading-s text-dark-electric-blue">
@@ -141,7 +141,7 @@
           <div class="md:flex lg:block gap-10 items-center">
             <div class="mb-8 block"><img src="/images/icon-eating.svg" alt="" /></div>
             <div class="flex flex-col gap-6 tablet:flex-row">
-              <h3 class="text-heading-m text-gunmetal font-semi-bold">Healthy eating</h3>
+              <h3 class="text-heading-m text-gunmetal font-semibold">Healthy eating</h3>
               <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
                 Healthy eating promotes weight control, disease prevention, better digestion,
                 immunity, mental clarity, and mood.
@@ -154,7 +154,7 @@
               <img src="/images/icon-exercise.svg" alt="" />
             </div>
             <div class="flex flex-col gap-6 tablet:flex-row">
-              <h3 class="text-heading-m text-gunmetal font-semi-bold">Regular exercise</h3>
+              <h3 class="text-heading-m text-gunmetal font-semibold">Regular exercise</h3>
               <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
                 Exercise improves fitness, aids weight control, elevates mood, and reduces disease
                 risk, fostering wellness and longevity.
@@ -165,7 +165,7 @@
           <div class="md:flex lg:block gap-10 items-center">
             <div class="mb-8"><img src="/images/icon-sleep.svg" alt="" /></div>
             <div class="flex flex-col gap-6 tablet:flex-row">
-              <h3 class="text-heading-m text-gunmetal font-semi-bold">Adequate sleep</h3>
+              <h3 class="text-heading-m text-gunmetal font-semibold">Adequate sleep</h3>
               <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
                 Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
                 overall restoration and rejuvenation.
@@ -177,7 +177,7 @@
       <section class="bg-gradient-to-b from-transparent to-[#ecf1f9] -z-10 pb-20">
         <div class="container grid grid-cols-1 w-full lg:grid-cols-2 gap-14">
           <div class="flex flex-col gap-8">
-            <h2 class="text-3xl lg:text-heading-l font-semi-bold text-gunmetal lg:text-left">
+            <h2 class="text-3xl lg:text-heading-l font-semibold text-gunmetal lg:text-left">
               Limitations of BMI
             </h2>
             <p class="text-dark-electric-blue text-body-m lg:text-heading-s lg:text-left">
@@ -192,7 +192,7 @@
             >
               <div class="flex items-center mb-4">
                 <img class="mr-4" src="/images/icon-gender.svg" alt="" />
-                <h3 class="text-heading-s text-gunmetal font-semi-bold">Gender</h3>
+                <h3 class="text-heading-s text-gunmetal font-semibold">Gender</h3>
               </div>
               <div>
                 <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
@@ -207,7 +207,7 @@
             >
               <div class="flex items-center mb-4">
                 <img class="mr-4" src="/images/icon-age.svg" alt="" />
-                <h3 class="text-heading-s text-gunmetal font-semi-bold">Age</h3>
+                <h3 class="text-heading-s text-gunmetal font-semibold">Age</h3>
               </div>
               <div>
                 <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
@@ -222,7 +222,7 @@
             >
               <div class="flex items-center mb-4">
                 <img class="mr-4" src="/images/icon-muscle.svg" alt="" />
-                <h3 class="text-heading-s text-gunmetal font-semi-bold">Muscle</h3>
+                <h3 class="text-heading-s text-gunmetal font-semibold">Muscle</h3>
               </div>
               <div>
                 <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
@@ -237,7 +237,7 @@
             >
               <div class="flex items-center mb-4">
                 <img class="mr-4" src="/images/icon-pregnancy.svg" alt="" />
-                <h3 class="text-heading-s text-gunmetal font-semi-bold">Pregnancy</h3>
+                <h3 class="text-heading-s text-gunmetal font-semibold">Pregnancy</h3>
               </div>
               <div>
                 <p class="text-dark-electric-blue text-body-m lg:text-heading-s">
@@ -249,11 +249,11 @@
             </div>
 
             <div
-              class="rounded-2xl bg-pure-white shadow-xl p-6 lg:text-left md:col-span-2 md:col-start-1 lg:col-span-1 lg:w-[365px] lg:-translate-x-[355px]"
+              class="rounded-2xl bg-pure-white shadow-xl p-6 lg:text-left md:col-span-2 md:w-[365px] mx-auto w-full md:col-start-1 lg:col-span-1 lg:-translate-x-[355px]"
             >
               <div class="flex items-center mb-4">
                 <img class="mr-4" src="/images/icon-race.svg" alt="" />
-                <h3 class="text-heading-s text-gunmetal font-semi-bold">Race</h3>
+                <h3 class="text-heading-s text-gunmetal font-semibold">Race</h3>
               </div>
               <div>
                 <p class="text-dark-electric-blue text-body-m text-left lg:text-heading-s">

@@ -37,10 +37,6 @@ const tailwindConfig = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
-      fontWeight: {
-        "semi-bold": 600,
-        regular: 400,
-      },
     },
   },
   plugins: [],
