@@ -61,21 +61,12 @@
             </div>
           </div>
 
-          <form class="md:flex gap-6">
-            <!-- TODO add imperial inputs-->
-            <!-- <div class="flex items-center border rounded-lg px-4 py-2">
-              <input
-                type="number"
-                class="outline-none border-none focus:ring-0 w-12 text-left"
-                placeholder="0"
-              />
-              <span class="text-blue font-semibold text-heading-m">ft</span>
-            </div> -->
+          <form class="gap-6">
             <div class="mb-4">
               <label class="block text-sm lg:text-lg text-dark-electric-blue text-left mb-2"
                 >Height</label
               >
-              <div
+              <!-- <div
                 class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
               >
                 <input
@@ -84,15 +75,35 @@
                   class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
                 <span class="text-blue font-semibold text-heading-m">cm</span>
+              </div> -->
+              <div class="grid grid-cols-2 gap-6">
+                <div
+                  class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                >
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="outline-none w-full text-gunmetal text-heading-m font-semibold"
+                  />
+                  <span class="text-blue font-semibold text-heading-m">ft</span>
+                </div>
+                <div
+                  class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                >
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="outline-none w-full text-gunmetal text-heading-m font-semibold"
+                  />
+                  <span class="text-blue font-semibold text-heading-m">in</span>
+                </div>
               </div>
-
-              <div></div>
             </div>
             <div class="mb-4">
               <label class="block text-sm lg:text-lg text-dark-electric-blue text-left mb-2"
                 >Weight</label
               >
-              <div
+              <!-- <div
                 class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
               >
                 <input
@@ -101,6 +112,29 @@
                   class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
                 <span class="text-blue font-semibold text-heading-m">kg</span>
+              </div> -->
+
+              <div class="grid grid-cols-2 gap-6">
+                <div
+                  class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                >
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="outline-none w-full text-gunmetal text-heading-m font-semibold"
+                  />
+                  <span class="text-blue font-semibold text-heading-m">st</span>
+                </div>
+                <div
+                  class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                >
+                  <input
+                    type="number"
+                    placeholder="0"
+                    class="outline-none w-full text-gunmetal text-heading-m font-semibold"
+                  />
+                  <span class="text-blue font-semibold text-heading-m">lbs</span>
+                </div>
               </div>
             </div>
           </form>
