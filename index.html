@@ -19,7 +19,6 @@
       class="h-[640px] lg:h-[737px] lg:max-w-[65%] lg:ml-6 bg-gradient-to-br from-transparent to-[#D6E6FE] absolute w-full -z-10 rounded-b-[35px]"
     ></div>
     <main class="z-10 flex flex-col gap-24">
-      <!-- <div><img src="/images/logo.svg" alt="" class="w-10 my-6" /></div> -->
       <section class="container flex flex-col lg:flex-row lg:h-[737px] items-center gap-8">
         <div><img src="/images/logo.svg" alt="" class="w-10 my-6 lg:hidden" /></div>
         <div class="flex flex-col lg:text-left gap-6">
@@ -40,7 +39,7 @@
         >
           <h1 class="text-xl lg:text-3xl font-semibold text-left">Enter your details below</h1>
 
-          <form class="gap-6">
+          <form id="bmiForm" class="gap-6">
             <div class="flex items-center text-left mb-8">
               <!-- Metric Radio Button -->
               <div class="w-1/2">
@@ -81,20 +80,22 @@
                 >Height</label
               >
               <div
-                class="metric-inputs | flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                class="metric-inputs flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
               >
                 <input
+                  id="metricHeight"
                   type="number"
                   placeholder="0"
                   class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
                 <span class="text-blue font-semibold text-heading-m">cm</span>
               </div>
-              <div class="imperial-inputs | grid grid-cols-2 gap-6">
+              <div class="imperial-inputs grid grid-cols-2 gap-6" style="display: none">
                 <div
                   class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
                 >
                   <input
+                    id="imperialHeightFeet"
                     type="number"
                     placeholder="0"
                     class="outline-none w-full text-gunmetal text-heading-m font-semibold"
@@ -105,6 +106,7 @@
                   class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
                 >
                   <input
+                    id="imperialHeightInches"
                     type="number"
                     placeholder="0"
                     class="outline-none w-full text-gunmetal text-heading-m font-semibold"
@@ -118,21 +120,22 @@
                 >Weight</label
               >
               <div
-                class="metric-inputs | flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
+                class="metric-inputs flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
               >
                 <input
+                  id="metricWeight"
                   type="number"
                   placeholder="0"
                   class="outline-none w-full text-gunmetal text-heading-m font-semibold"
                 />
                 <span class="text-blue font-semibold text-heading-m">kg</span>
               </div>
-
-              <div class="imperial-inputs | grid grid-cols-2 gap-6">
+              <div class="imperial-inputs grid grid-cols-2 gap-6" style="display: none">
                 <div
                   class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
                 >
                   <input
+                    id="imperialWeightStones"
                     type="number"
                     placeholder="0"
                     class="outline-none w-full text-gunmetal text-heading-m font-semibold"
@@ -143,6 +146,7 @@
                   class="flex h-[69px] items-center border border-dark-electric-blue rounded-xl px-6 py-4 bg-pure-white"
                 >
                   <input
+                    id="imperialWeightPounds"
                     type="number"
                     placeholder="0"
                     class="outline-none w-full text-gunmetal text-heading-m font-semibold"
@@ -155,16 +159,18 @@
           <div
             class="bg-blue flex flex-col md:flex-row md:place-items-center gap-6 justify-between p-8 rounded-l-2xl rounded-r-2xl md:rounded-r-full text-left"
           >
-            <p class="text-pure-white flex flex-col gap-2 lg:text-lg">
-              You BMI is...<br /><span class="text-heading-l font-semibold">23.4</span>
+            <p id="bmiResult" class="text-pure-white flex flex-col gap-2 lg:text-lg">
+              Your BMI is...<br /><span class="text-heading-l font-semibold">23.4</span>
             </p>
-            <p class="flex text-pure-white md:w-1/2 lg:text-lg">
+            <p id="weightRange" class="flex text-pure-white md:w-1/2 lg:text-lg">
               Your BMI suggests you're a healthy weight. Your ideal weight is between
               <strong class="contents">63.3kgs - 85.2kgs</strong>
             </p>
           </div>
         </div>
       </section>
+
+      <!-- WHAT IS BMI SECTION?  -->
       <section class="lg:container md:flex items-center lg:items-end gap-8 lg:gap-0">
         <div class="md:w-[80%] lg:w-full">
           <img src="/images/image-man-eating.webp" alt="" />
@@ -182,6 +188,8 @@
           </p>
         </div>
       </section>
+
+      <!-- ADVICE SECTION-->
       <section
         class="bg-gradient-to-r from-transparent to-[#ecf1f9] lg:w-[98%] lg:mx-auto lg:rounded-[35px] -z-10"
       >
@@ -222,6 +230,7 @@
           </div>
         </div>
       </section>
+      <!-- LIMITATIONS SECTION -->
       <section class="bg-gradient-to-b from-transparent to-[#ecf1f9] -z-10 pb-20">
         <div class="container grid grid-cols-1 w-full lg:grid-cols-2 gap-14">
           <div class="flex flex-col gap-8">
