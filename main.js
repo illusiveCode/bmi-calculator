@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         metricHeightInput,
         metricWeightInput
       );
-      calculateBMI(); // Recalculate BMI after switching measurement units
+      calculateBMI();
     }
   };
 
