@@ -13,7 +13,7 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 
 ![Project-Screenshot](./screenshot.png)
 
-- Live Site URL: ()
+- Live Site URL: (https://simplebmi.netlify.app/)
 
 ### Built with
 
